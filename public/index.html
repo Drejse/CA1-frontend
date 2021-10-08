@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathias CA1</title>
+</head>
+
+<body>
+  <!--
+    This div is added to remove the flicker that comes from bootstrap being loaded
+    first in index.js
+    REMEMBER to set display to "block" in index.js, otherwise you will not see anything
+  -->
+  <div id="all-content" style="display: none;">
+    <ul id="menu" class="header">
+      <li><a href="" id="frontpage">Frontpage</a></li>
+      <li><a href="" id="addPerson">Add Person</a></li>
+
+    </ul>
+
+    <div class="content">
+
+      <!-- This is were you should place your basic HTML for exercise-1 -->
+      <div id="frontpage_html" style="display:none;">
+        <div class="d-flex flex-column align-items-center">
+        <h1>Welcome to Mathias CA1</h1>
+        <div id="searchDiv" style="text-align: center;">
+          <input type="text" id="inputText" required style="margin-top: 10px;margin-bottom: 10px;" placeholder="Search" class="form-control"/>
+          <br>
+          <button class="btn btn-primary" id="searchPersonById">Search by Person ID</button>
+          <button class="btn btn-primary" id="searchPersonByPhoneNumber">Search by Phone Number</button>
+          <button class="btn btn-primary" id="searchPersonByZip">Search by Zip</button>
+          <button class="btn btn-primary" id="countPersonsWithHobby">Count Persons with hobby</button>
+        </div>
+
+        <div id="result">
+          
+        </div>
+        <div id="error">
+
+        </div>
+      </div>
+      </div>
+      <!-- End of HTML for exercise-1 -->
+
+
+
+      <div id="addPerson_html" style="display:none;">
+        <h1>ADD PERSON PAGE</h1>
+        
+        <form id="addPersonForm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="addFirstName" placeholder="Enter first name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="addLastName" placeholder="Enter last name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="addEmail" placeholder="Enter email">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="addStreet">Street</label>
+              <input type="text" class="form-control" id="addStreet">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="addAdditionalInfo">Additional info</label>
+              <input type="text" class="form-control" id="addAdditionalInfo">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="addCity">City</label>
+              <input type="text" class="form-control" id="addCity">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="addZip">Zip</label>
+              <input type="text" class="form-control" id="addZip">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="addNumber">Phone Number</label>
+              <input type="text" class="form-control" id="addNumber">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="addDescription">Description</label>
+              <input type="text" class="form-control" id="addDescription">
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-primary" id="addPhoneNumber">Add PhoneNumber</button>
+            </div>
+          </div>
+
+          <div>
+              <ul id="phoneNumbers">
+
+              </ul>
+          </div>
+
+
+          <div class="form-group">
+            <select class="form-select" id="addHobbyName" multiple aria-label="multiple select example">
+              <option selected disabled>Open this select menu</option>
+            </select>
+          </div>
+         
+          <button type="submit" id="addPersonSubmit" class="btn btn-primary">Add Person</button>
+        </form>
+      </div>
+      <!-- End of HTML for exercise-2 -->
+
+  
+    <!-- End of HTML for ABOUT Page -->
+
+
+    <!--End of all content -->
+  </div>
+
+  <!-- #################################################################-->
+  <!-- IMPORTANT  DO NOT IMPORT ANY JavaScript in this file by YOURSELF -->
+  <!-- #################################################################-->
+
+</body>
+
+</html>
